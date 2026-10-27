@@ -6,46 +6,48 @@
 			try {
 				var saved = localStorage.getItem('darkMode');
 				document.documentElement.classList.add(saved === 'true' ? 'dark-mode' : 'light-mode');
-			} catch(e) {
+			} catch (e) {
 				document.documentElement.classList.add('light-mode');
 			}
 		</script>
 		<link rel="icon" href="/imgs/favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- This is to add font for icon -->
-    <link
-      rel="stylesheet"
-      href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-    />
-		<link href="/_app/immutable/entry/start.DKACbCSh.js" rel="modulepreload">
-		<link href="/_app/immutable/chunks/CrR17qhj.js" rel="modulepreload">
-		<link href="/_app/immutable/chunks/BSx_KQnw.js" rel="modulepreload">
-		<link href="/_app/immutable/chunks/OA8UcISh.js" rel="modulepreload">
-		<link href="/_app/immutable/chunks/DwQftUnA.js" rel="modulepreload">
-		<link href="/_app/immutable/entry/app.Ce0t4O_t.js" rel="modulepreload">
-		<link href="/_app/immutable/chunks/C1FmrZbK.js" rel="modulepreload">
-		<link href="/_app/immutable/chunks/BTsPikL4.js" rel="modulepreload">
-		<link href="/_app/immutable/nodes/0.CXU14432.js" rel="modulepreload">
-		<link href="/_app/immutable/nodes/23.BVFEc0u8.js" rel="modulepreload">
-		<link href="/_app/immutable/chunks/D6YF6ztN.js" rel="modulepreload">
+		<!-- This is to add font for icon -->
+		<link
+			rel="stylesheet"
+			href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+		/>
+		<link href="/_app/immutable/entry/start.CdZlpVE8.js" rel="modulepreload">
+		<link href="/_app/immutable/entry/payload.DSmR2FwN.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/CRzLMJPS.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/ggmSf8Xh.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/C1wV4BFV.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/Dek69VGa.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/CCMvjPRt.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/Cg3pm-K7.js" rel="modulepreload">
+		<link href="/_app/immutable/entry/app.CrZ-xJ9j.js" rel="modulepreload">
+		<link href="/_app/immutable/nodes/0.B9vb6WGi.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/XKyaHtl9.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/4bLKL4q_.js" rel="modulepreload">
+		<link href="/_app/immutable/nodes/23.BfeTe1ad.js" rel="modulepreload">
 		
-		<link href="/_app/immutable/assets/app.DY5HmBPW.css" rel="stylesheet">
-		<link href="/_app/immutable/assets/23.Dr_OJWUl.css" rel="stylesheet">
+		<link href="/_app/immutable/assets/app.zQcoa_9T.css" rel="stylesheet">
+		<link href="/_app/immutable/assets/23.Co7tz7yT.css" rel="stylesheet">
 	</head>
 	<body data-sveltekit-preload-data="hover">
-    <div style="display: contents" id="svelte">
+		<div style="display: contents" id="svelte">
 			<script>
 				{
-					__sveltekit_1grayta = {
-						base: ""
+					__sveltekit_16l5csw = {
+						base: "",
+						version: "1793084793585"
 					};
 
 					const element = document.currentScript.parentElement;
 
-					Promise.all([
-						import("/_app/immutable/entry/start.DKACbCSh.js"),
-						import("/_app/immutable/entry/app.Ce0t4O_t.js")
-					]).then(([kit, app]) => {
+					import("/_app/immutable/entry/start.CdZlpVE8.js").then(async (kit) => {
+						kit.init(__sveltekit_16l5csw);
+						const app = await import("/_app/immutable/entry/app.CrZ-xJ9j.js");
 						kit.start(app, element);
 					});
 				}
